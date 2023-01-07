@@ -25,7 +25,7 @@ main {
     ;
 }
 .ads,
-.ads div, .nook  {
+.ads div, .nook  , .nook div {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -189,14 +189,43 @@ color: wheat;
 .nook  {
     flex-direction: row;
 }
+
+.nook div  {
+    flex-direction: column;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    max-height: 80%;
+}
 .main-nook {
     text-align: center;
-background: url('./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg') no-repeat currentColor center/cover;
-    height: 500px;
+    background: url('./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg') no-repeat currentColor center/cover;
+    height: 900px;
     width: 100%;
+    padding: 50px;
 }
 .main-nook h1
 {
-font-size: 40px;
+font-size: 3em;
+padding-bottom: 0.5em;
+padding-top: 80px;
 }
 
+.nook img {
+    height: 400px;
+    width: 100%;
+}
+.nook #st-sec {
+    background-color: #be9372;
+    padding-bottom: 5vh;}
+.nook #nd-sec{
+    background-color: #5b5e58;
+    padding-bottom: 5vh;
+}
+.nook #rd-sec {
+    background-color: #354852;
+    padding-bottom: 5vh;
+}
+.nook h2 ,.nook p,.nook a {
+text-align: center;
+}
+/*  */
