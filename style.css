@@ -36,14 +36,20 @@ main {
     display: flex;
     align-items: center;
     position: relative;
+    margin: 0.5vw;
+}
+.navbar h1 {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
 }
 
 .navbar a {
     color: wheat;
     text-decoration: none;
-    font-size: 20px;
-    padding: 0 20px;
-    margin: 0 5px;
+    font-size: 1.2em;
+    padding: 0 0.8vh;
+    margin: 0 0.2vh;
     max-height: 90%;
     height: inherit;
     width: inherit;
@@ -58,7 +64,8 @@ main {
     position: fixed;
     top: 0px;
     padding: 0;
-    background-color: #4630258d;
+    background-color: #463025b9;
+    z-index: 99;
 
 }
 
@@ -90,20 +97,20 @@ main {
 .navbar li::before,
 .current::before {
     top: -10px;
-    left: 10px;
+    left: 0px;
 }
 
 .navbar li::after,
 .current::after {
     bottom: -10px;
-    right: 10px;
+    right: 0px;
 }
 
 .navbar li:hover::before,
 .navbar li:hover::after,
 .current::before,
 .current::after {
-    width: 88%;
+    width: 100%;
 }
 
 .navbar li:hover::before,
@@ -123,8 +130,8 @@ main {
 
 /* showcase */
 #showcase {
-    background: url('./images/antique-book-shelf-vintage-backg.jpg') no-repeat currentColor center/cover;
-    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/antique-book-shelf-vintage-backg.jpg') no-repeat currentColor center/cover;
+    height: 750px;
     width: 100%;
 }
 #showcase .showcase-content {
@@ -134,7 +141,7 @@ main {
 }
 
 #showcase .showcase-content h1 {
-    font-size: 70px;
+    font-size: 4.6em;
     
 }
 
@@ -147,17 +154,18 @@ main {
 }
 
 
-#SC-btn {
-    font-size: 20px;
+button {
+    font-size: 1em;
     color: wheat;
-    background-color: rgba(51, 51, 51, 0.634);
+    background-color: rgba(0, 0, 0, 0.688);
     border: rgba(51, 51, 51, 0.634) solid 1px;
     padding: 7px;
 }
-#SC-btn:hover {
+button:hover {
     border: solid 1px wheat;
     background: transparent;
     color: wheat;
+    box-shadow: 0 2px 5px;
 
 
 }
@@ -198,20 +206,21 @@ color: wheat;
 }
 .main-nook {
     text-align: center;
-    background: url('./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg') no-repeat currentColor center/cover;
-    height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg') no-repeat currentColor center/cover;
+    height: 30%;
     width: 100%;
-    padding: 50px;
+    padding: 50px; 
+
 }
 .main-nook h1
 {
 font-size: 3em;
 padding-bottom: 0.5em;
-padding-top: 80px;
+padding-top: 10vh;
 }
 
 .nook img {
-    height: 400px;
+    height: 340px;
     width: 100%;
 }
 .nook #st-sec {
@@ -228,4 +237,50 @@ padding-top: 80px;
 .nook h2 ,.nook p,.nook a {
 text-align: center;
 }
-/*  */
+/* ניסיון1 */
+
+.nook div {
+    transition: all .4s ease;
+}
+.nook div:hover {
+    transform: scale(1.05);
+        box-shadow: rgb(0, 0, 0) 0 2px 1vh;
+}
+/*contact*/
+#contact {
+    text-align: center;
+    height: 30vh;
+    width: 100%;
+    padding: 1.5vh;
+    background-color: #9f6d52;
+    
+}
+#contact button {
+    height: 7vh;
+        box-shadow: rgb(0, 0, 0) 0 1px 0.5vh;
+}
+#contact h1 {
+margin-bottom:3vh ;
+}
+#contact #input1 {
+    width: 30vw;
+    height: 7vh;
+    background-color: wheat;
+    color: #5b5e58;
+    border: 0px;
+        box-shadow: rgb(0, 0, 0) 0 1px 0.5vh;
+}
+#contact #input2{
+    align-self: center;
+}
+::placeholder{
+font-size: 1.5em;
+}
+#contact div{
+    max-height:10%
+}
+#contact form {
+    margin-bottom: 4vh;
+}
+/* footer */
+
