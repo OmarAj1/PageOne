@@ -24,8 +24,7 @@ main {
     color: #9f6d52
     ;
 }
-.ads,
-.ads div, .nook  , .nook div {
+.navbar,.ads, .ads div, .nook  , .nook div {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -57,8 +56,7 @@ main {
 
 .navbar {   
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+
     width: 100%;
     height: 70px;
     position: fixed;
@@ -151,6 +149,10 @@ main {
 }
 .container .showcase-content a {
     color: wheat;
+}
+.container .showcase-content em {
+        display: block;
+        margin-top :4vh;
 }
 
 
@@ -283,4 +285,21 @@ font-size: 1.5em;
     margin-bottom: 4vh;
 }
 /* footer */
+footer {
+background-color: #463025b9;
+font-size: 24px;
+}
+footer div {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left:40vw ;
+    margin-right:40vw ;
 
+}
+@media (width:1000px)
+{
+
+}
