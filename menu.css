@@ -3,6 +3,12 @@
     --secondary-color: rgb(159, 109, 82);
 }
 
+.second-one {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .menu-wrap {
     position: fixed;
     top: 0;
