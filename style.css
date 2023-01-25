@@ -29,7 +29,7 @@ main {
 .ads,
 .ads div,
 .nook,
-.nook div {
+.nook #card {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -166,6 +166,53 @@ button:hover {
     box-shadow: 0px 2px 5px;
 }
 
+.nook {
+    flex-direction: row;
+}
+
+.nook #card {
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
+    width: 80%;
+    transition: all 0.4s ease 0s;
+    flex-direction: column;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    max-height: 80%;
+}
+
+.nook #card:hover {
+    transform: scale(1.05);
+    box-shadow: rgb(0, 0, 0) 0px 2px 1vh;
+}
+
+.main-nook {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg") center center / cover no-repeat currentcolor;
+    height: 30%;
+    width: 100%;
+    padding: 50px;
+}
+
+.main-nook h1 {
+    font-size: 2.1em;
+    padding-bottom: 0.5em;
+    padding-top: 10vh;
+}
+
+.nook img {
+    width: 100%;
+    height: 200px;
+    /* max-width: 60%; */
+}
+
+.nook h2,
+.nook p,
+.nook a {
+    text-align: center;
+    font-size: 12px;
+}
+
 .ads {
     flex-direction: row;
     background-color: rgb(159, 109, 82);
@@ -188,57 +235,6 @@ button:hover {
 
 .ads h2 {
     color: wheat;
-}
-
-.nook {
-    flex-direction: row;
-}
-
-.nook div {
-    flex-direction: column;
-    margin-left: 3vh;
-    margin-right: 2vh;
-    max-height: 80%;
-}
-
-.main-nook {
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg") center center / cover no-repeat currentcolor;
-    height: 30%;
-    width: 100%;
-    padding: 50px;
-}
-
-.main-nook h1 {
-    font-size: 2.1em;
-    padding-bottom: 0.5em;
-    padding-top: 10vh;
-}
-
-.nook img {
-    width: 100%;
-}
-
-.nook #card {
-    margin-bottom: 3vh;
-    padding-bottom: 3vh;
-    width: 80%;
-}
-
-.nook h2,
-.nook p,
-.nook a {
-    text-align: center;
-    font-size: 12px;
-}
-
-.nook div {
-    transition: all 0.4s ease 0s;
-}
-
-.nook div:hover {
-    transform: scale(1.05);
-    box-shadow: rgb(0, 0, 0) 0px 2px 1vh;
 }
 
 #contact {
@@ -304,20 +300,36 @@ footer div {
     display: none;
 }
 
+@media (min-width: 1200px) {
+    .nook #card {
+        width: 25%;
+        height: 40%;
+    }
+    #card img {
+        height: 400px;
+    }
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
+    .nook {
+        align-items: center;
+    }
+    .nook #card {
+        width: 80%;
+    }
     .menu-wrap {
         display: flex;
     }
     .nook {
         flex-direction: column;
     }
+    .nook img {
+        width: 100%;
+    }
     #showcase .showcase-content {
         color: wheat;
         text-align: center;
         padding-top: 100px;
-    }
-    .nook div {
-        max-width: 100%;
     }
     .ads div {
         padding: 10px;
@@ -353,9 +365,6 @@ footer div {
     }
     footer a {
         margin: 10px;
-    }
-    .nook img {
-        width: 100%;
     }
     .navbar {
         height: 6vh;
