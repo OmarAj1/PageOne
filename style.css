@@ -219,24 +219,9 @@ button:hover {
     width: 100%;
 }
 
-.nook #st-sec {
-    background-color: rgb(190, 147, 114);
+.nook #card {
     margin-bottom: 3vh;
     padding-bottom: 3vh;
-    width: 80%;
-}
-
-.nook #nd-sec {
-    background-color: rgb(91, 94, 88);
-    margin-bottom: 3vh;
-    width: 80%;
-    padding-bottom: 3vh;
-}
-
-.nook #rd-sec {
-    background-color: rgb(53, 72, 82);
-    padding-bottom: 3vh;
-    margin-bottom: 3vh;
     width: 80%;
 }
 
