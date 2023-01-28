@@ -28,8 +28,7 @@ main {
 .navbar,
 .ads,
 .ads div,
-.nook,
-.nook #card {
+.nook {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -135,7 +134,7 @@ main {
 }
 
 #showcase .showcase-content h1 {
-    font-size: 4.6em;
+    font-size: 4.1em;
 }
 
 #showcase .showcase-content p {
@@ -150,6 +149,7 @@ main {
 .container .showcase-content em {
     display: block;
     margin-top: 4vh;
+    font-size: 1.1rem;
 }
 
 button {
@@ -179,6 +179,8 @@ button:hover {
     margin-left: 3vh;
     margin-right: 2vh;
     max-height: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .nook #card:hover {
@@ -186,8 +188,12 @@ button:hover {
     box-shadow: rgb(0, 0, 0) 0px 2px 1vh;
 }
 
-.main-nook {
+.main-nook h1 {
     text-align: center;
+}
+
+.main-nook {
+    /* text-align: center; */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/grab-a-book-and-get-cozy-v0-4bs1a7k6ov7a11.jpg") center center / cover no-repeat currentcolor;
     height: 30%;
     width: 100%;
@@ -203,14 +209,21 @@ button:hover {
 .nook img {
     width: 100%;
     height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     /* max-width: 60%; */
 }
 
-.nook h2,
-.nook p,
-.nook a {
-    text-align: center;
-    font-size: 12px;
+.nook h2 {
+    padding: 10px;
+}
+
+.nook a,
+.nook p {
+    /* text-align: initial; */
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 .ads {
@@ -238,18 +251,19 @@ button:hover {
 }
 
 #contact {
-    text-align: center;
-    /* height: 30vh; */
     width: 100%;
     padding: 1.5vh;
     background-color: rgb(159, 109, 82);
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact button {
     box-shadow: rgb(0, 0, 0) 0px 1px 0.5vh;
     height: 6vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #contact h1 {
@@ -263,6 +277,8 @@ button:hover {
     border: 0px;
     box-shadow: rgb(0, 0, 0) 0px 1px 0.5vh;
     height: 6vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
 }
 
 #contact #input2 {
@@ -278,7 +294,7 @@ button:hover {
 }
 
 #contact form {
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
 }
 
 footer {
